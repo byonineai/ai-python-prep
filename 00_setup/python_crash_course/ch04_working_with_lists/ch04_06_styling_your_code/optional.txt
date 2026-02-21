@@ -1,0 +1,9 @@
+pip install ruff
+
+{
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  }
+}

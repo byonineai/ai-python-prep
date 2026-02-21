@@ -1,0 +1,108 @@
+title()
+upper()
+lower()
+rstrip()
+lstrip()
+strip()
+
+--Manipulate list --
+
+append()
+insert(index,element)
+del motorcycles[0]
+pop() - allow to remove the item from the list but work with it
+pop(2) - pop from a position of a list
+remove('itemname') - remove without knowing the position and allows to work with value
+
+-- Organizing a list --
+
+sort() - Changes the order of the list permanently
+sort(reverse=True) - sort in reverse
+sorted(list) - sort a list temporarily
+reverse() - print in reverse order
+len() - find a list length - print starting from 1
+
+-- Loops --
+for
+while
+-----------
+range()
+list()
+
+-- List comprehension
+
+result = [EXPRESSION for item in iterable]
+result = [EXPRESSION for item in iterable if CONDITION]
+result = [EXPRESSION_IF_TRUE if CONDITION else EXPRESSION_IF_FALSE for item in iterable]
+result = [EXPR for a in iterable_a for b in iterable_b]
+result = [EXPR for a in iterable_a for b in iterable_b if CONDITION]
+result = [EXPR for i, item in enumerate(iterable)]
+result = [func(item) for item in iterable]
+flat = [x for sublist in list_of_lists for x in sublist]
+
+-- Simple Statistics
+
+min()
+max()
+sum()
+
+-- Slicing a list
+Syntax: lst[start:stop] — includes start, excludes stop.
+First 3: lst[:3]
+Last 2: lst[-2:]
+Middle slice: lst[2:5]
+Every other element: lst[::2]
+Reverse: lst[::-1]
+Step: lst[start:stop:step]
+Assign or remove: lst[1:3] = [9,9] or del lst[1:3]
+Shallow copy: copy = lst[:]
+
+my_list = [0,1,2,3,4,5,6]
+print(my_list[:3])    # [0,1,2]
+print(my_list[-2:])   # [5,6]
+print(my_list[2:5])   # [2,3,4]
+print(my_list[::2])   # [0,2,4,6]
+print(my_list[::-1])  # [6,5,4,3,2,1,0]
+copy = my_list[:]     # shallow copy
+del my_list[1:3]      # removes indices 1 and 2
+del - works for dictionaries as well
+
+#lists
+Mutable
+Many built-in methods
+performance - slightly slower and less memory efficient
+cannot be used as dictionary keys
+typical use = dynamic collections, (shopping car, a list of tasks)
+
+
+Tuples
+Immutable (cannot be modified)
+fewer built in methods (only count(0 and index))
+Generally faster and memory efficient
+Can be used as dictionary keys (if all elements within are immutable)
+Fixed data (e.g, geographic coordinates, database records, function return values)
+
+Set (Math):(Order doesn't matter, no duplicates).
+Python set(): {1, 2, 3} (Unordered, unique, faster for membership checks).
+Python tuple: (1, 2, 3) (Ordered, immutable, can have duplicates).
+Python list: [1, 2, 3] (Ordered, mutable, can have duplicates).
+
+Summary of Similarities
+
+Sets (set): Unordered, mutable, unique elements, supports mathematical operations like union/intersection.
+Tuples (tuple): Ordered, allows duplicates, immutable (cannot change).
+Lists (list): Ordered, allows duplicates, mutable (can change).
+Dictionaries (dict): Ordered (since Python 3.7), mutable, does not allow duplicate keys.
+//Checking if value in list
+use 'in' reserved keyword
+use 'not in'
+
+Boolean Expressions
+
+game_active = True
+can_edit = False
+
+More functions
+
+lower()
+upper()
